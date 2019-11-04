@@ -1,0 +1,17 @@
+.Experience {
+    padding: 50px 10%;
+}
+
+.ExperienceBody {
+    margin-top: 50px;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Paper {
+    width: 48%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}

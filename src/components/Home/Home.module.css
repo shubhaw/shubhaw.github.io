@@ -1,0 +1,33 @@
+.Home {
+    background: url('../../assets/images/bg.jpg');
+    background-size: cover;
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+}
+
+.Home .Main {
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .Home .Main .MainText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+} */
+
+/* .h1 {
+    font-size: 5rem !important;
+} */

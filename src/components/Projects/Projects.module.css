@@ -1,0 +1,11 @@
+.Projects {
+    padding: 50px 10%;
+}
+
+.ProjectsBody {
+    margin-top: 30px;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
