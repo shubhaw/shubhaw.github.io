@@ -1,9 +1,7 @@
 .Card {
-    width: 48%;
     box-sizing: border-box;
     margin: 15px 0;
-    
-    padding: 20px 40px;
+    padding: 10px 10px;
 }
 
 .duration {
@@ -12,6 +10,27 @@
 
 .text {
     margin-top: 20px !important;
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
     line-height: 2rem !important;
+}
+
+@media only screen and (min-width: 768px) {
+    .Card {
+        width: 48%;
+        /* padding: 20px 15px; */
+    }
+
+    .text {
+        font-size: 1rem !important;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .Card {
+        padding: 20px 40px;
+    }
+
+    .text {
+        font-size: 1.1rem !important;
+    }
 }

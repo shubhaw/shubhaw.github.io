@@ -1,21 +1,21 @@
 .Skills {
-    padding: 50px 10%;
+    padding: 70px 5% 0;
+    box-sizing: border-box;
 }
 
 .SkillsBody {
     margin-top: 50px;
     box-sizing: border-box;
-    padding: 50px;
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding: 20px 5px;
 }
 
 .Skill {
     margin: 7px 10px;
     padding: 7px 25px;
-    font-size: 1.1rem;
     background-color: #333333 !important;
     color: #DDDDDD !important;
     border-radius: 7px !important;
@@ -24,4 +24,20 @@
 
 .Skill:hover, .Skill:focus {
     box-shadow: 1px 2px #777777;
+}
+
+@media only screen and (min-width: 600px) {
+    .Skills {
+        padding: 70px 10% 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .SkillsBody {
+        padding: 50px;
+    }
+
+    .Skill {
+        font-size: 1.1rem;
+    }
 }

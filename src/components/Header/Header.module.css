@@ -9,5 +9,26 @@
 
 .buttonBase {
     border-radius: 5px !important;
-    width: inherit;
+}
+
+.desktopOnly {
+    display: none;
+}
+
+.mobileOnly {
+    cursor: pointer;
+}
+
+.menuIcon {
+    
+}
+
+@media only screen and (min-width: 700px) {
+    .desktopOnly {
+        display: inline;
+    }
+
+    .mobileOnly {
+        display: none;
+    }
 }
