@@ -1,0 +1,48 @@
+.Card {
+    width: 32%;
+    box-sizing: border-box;
+    margin: 15px 0;
+    height: 550px;
+}
+
+.descriptionBody {
+    height: 265px;
+    /* background-color: thistle; */
+    margin-top: 5px;
+    box-sizing: border-box;
+    padding: 0 0 5px;
+    overflow-y: auto !important;
+}
+
+.cardContent {
+    /* background-color: teal; */
+    padding: 5px 15px !important;
+}
+
+.cardActions {
+    padding: 0px 10px !important;
+}
+
+.projectName {
+    /* background-color: turquoise; */
+    box-sizing: border-box;
+    margin: 0;
+    /* text-overflow: ellipsis; */
+    /* overflow: visible !important; */
+    overflow-x: auto;
+    white-space: nowrap !important;
+}
+
+.text {
+    line-height: 1.7rem !important;
+}
+
+.tagBox {
+    position: relative;
+}
+
+.tag {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}

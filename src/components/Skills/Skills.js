@@ -11,8 +11,8 @@ export default function Skills() {
         'Photoshop', 'Figma'
     ]
     return (
-        <div className={styleClasses.Skills}>
-            <Typography variant="h4" style={{textAlign: "center"}}>
+        <div id="skills" className={styleClasses.Skills}>
+            <Typography variant="h3" style={{textAlign: "center"}}>
                 Skills
             </Typography>
             <Paper className={styleClasses.SkillsBody}>

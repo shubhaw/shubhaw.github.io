@@ -4,8 +4,8 @@ import styleClasses from './About.module.css';
 
 export default function About() {
     return (
-        <div className={styleClasses.About}>
-            <Typography variant="h4" style={{textAlign: "center"}}>
+        <div id="about" className={styleClasses.About}>
+            <Typography variant="h3" style={{textAlign: "center"}}>
                 About
             </Typography>
             <Paper className={styleClasses.paper}>

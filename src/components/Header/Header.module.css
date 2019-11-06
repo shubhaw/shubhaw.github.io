@@ -1,0 +1,13 @@
+.link {
+    color: inherit;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 10px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.buttonBase {
+    border-radius: 5px !important;
+    width: inherit;
+}
