@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/core/styles';
 import Header from './components/Header/Header';
@@ -7,6 +7,7 @@ import About from './components/About/About';
 import Experience from './components/Experience/Experience';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
+import Sidebar from './components/Sidebar/Sidebar';
 
 const theme = createMuiTheme({
     typography: {
@@ -44,11 +45,25 @@ function App() {
         homeObserver.observe(home);
     })
 
+    const [isSidebarVisible, setSidebarVisibility] = useState(false);
+
+    // const toggleSidebar = () => {
+    //     setSidebarVisibility(!isSidebarVisible);
+    // }
+
+    const closeSidebar = () => {
+        setSidebarVisibility(false);
+    }
+
+    const openSidebar = () => {
+        setSidebarVisibility(true);
+    }
 
     return (
         <ThemeProvider theme={theme}>
             <div>
-                <Header />
+                <Sidebar show={isSidebarVisible} sidebarCloseHandler={closeSidebar} />
+                <Header sidebarOpenHandler={openSidebar} sidebarCloseHandler={closeSidebar} />
                 <Home />
                 <About />
                 <Experience />
