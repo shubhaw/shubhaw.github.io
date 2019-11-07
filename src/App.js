@@ -19,6 +19,9 @@ const useStyles = makeStyles(theme => ({
     nonTransparent: {
         backgroundColor: '#111111 !important',
         boxShadow: "0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12)"
+    },
+    active: {
+        fontWeight: 'bold'
     }
 }));
 
@@ -26,18 +29,21 @@ function App() {
     const classes = useStyles();
     useEffect(() => {
         const header = document.querySelector("header");
-        const home = document.querySelector(".home");
-
+        const home = document.querySelector("#home");
+        const homeNav = document.querySelector(".homeNav");
+        
         const homeOptions = {
-            rootMargin: "-70px 0px 0px 0px"
+            rootMargin: "-10% 0px 0px 0px"
         };
 
         const homeObserver = new IntersectionObserver((entries, homeObserver) => {
             entries.forEach(entry => {
                 if (!entry.isIntersecting) {
                     header.classList.add(classes.nonTransparent);
+                    homeNav.classList.remove(classes.active);
                 } else {
-                    header.classList.remove(classes.nonTransparent)
+                    header.classList.remove(classes.nonTransparent);
+                    homeNav.classList.add(classes.active);
                 }
             })
         }, homeOptions);
@@ -45,11 +51,92 @@ function App() {
         homeObserver.observe(home);
     })
 
-    const [isSidebarVisible, setSidebarVisibility] = useState(false);
+    useEffect(() => {
+        const about = document.querySelector("#about");
+        const aboutNav = document.querySelector(".aboutNav");
 
-    // const toggleSidebar = () => {
-    //     setSidebarVisibility(!isSidebarVisible);
-    // }
+        const aboutOptions = {
+            rootMargin: "-70px 0px -90% 0px"
+        };
+
+        const aboutObserver = new IntersectionObserver((entries, aboutObserver) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    aboutNav.classList.remove(classes.active);
+                } else {
+                    aboutNav.classList.add(classes.active);
+                }
+            })
+        }, aboutOptions);
+
+        aboutObserver.observe(about);
+    })
+
+    useEffect(() => {
+        const experience = document.querySelector("#experience");
+        const experienceNav = document.querySelector(".experienceNav");
+
+        const experienceOptions = {
+            rootMargin: "-70px 0px -90% 0px"
+        };
+
+        const experienceObserver = new IntersectionObserver((entries, experienceObserver) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    experienceNav.classList.remove(classes.active);
+                } else {
+                    experienceNav.classList.add(classes.active);
+                }
+            })
+        }, experienceOptions);
+
+        experienceObserver.observe(experience);
+    })
+
+
+    useEffect(() => {
+        const projects = document.querySelector("#projects");
+        const projectsNav = document.querySelector(".projectsNav");
+
+        const projectsOptions = {
+            rootMargin: "-70px 0px -90% 0px"
+        };
+
+        const projectsObserver = new IntersectionObserver((entries, projectsObserver) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    projectsNav.classList.remove(classes.active);
+                } else {
+                    projectsNav.classList.add(classes.active);
+                }
+            })
+        }, projectsOptions);
+
+        projectsObserver.observe(projects);
+    })
+    
+    useEffect(() => {
+        const skills = document.querySelector("#skills");
+        const skillsNav = document.querySelector(".skillsNav");
+
+        const skillsOptions = {
+            rootMargin: "-70px 0px -90% 0px"
+        };
+
+        const skillsObserver = new IntersectionObserver((entries, skillsObserver) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    skillsNav.classList.remove(classes.active);
+                } else {
+                    skillsNav.classList.add(classes.active);
+                }
+            })
+        }, skillsOptions);
+
+        skillsObserver.observe(skills);
+    })
+
+    const [isSidebarVisible, setSidebarVisibility] = useState(false);
 
     const closeSidebar = () => {
         setSidebarVisibility(false);

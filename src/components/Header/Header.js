@@ -8,8 +8,7 @@ import { ButtonBase } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
     root: {
-        flexGrow: 1,
-        border: '2px solid white'
+        flexGrow: 1
     },
     menuButton: {
         marginRight: theme.spacing(2),
@@ -26,6 +25,39 @@ const useStyles = makeStyles(theme => ({
 export default function Header(props) {
     const classes = useStyles();
 
+    const links = [
+        {
+            text: 'Home',
+            href: '#home',
+            class: 'homeNav'
+        },
+        {
+            text: 'About',
+            href: '#about',
+            class: 'aboutNav'
+        },
+        {
+            text: 'Experience',
+            href: '#experience',
+            class: 'experienceNav'
+        },
+        {
+            text: 'Projects',
+            href: '#projects',
+            class: 'projectsNav'
+        },
+        {
+            text: 'Skills',
+            href: '#skills',
+            class: 'skillsNav'
+        },
+        {
+            text: 'Contact',
+            href: '#skills',
+            class: 'skillsNav'
+        }
+    ];
+
     return (
         <div className={classes.root}>
             <AppBar position="fixed" className={classes.transparent}>
@@ -35,21 +67,13 @@ export default function Header(props) {
                     </a>
 
                     <div className={styleClasses.desktopOnly}>
-                        <ButtonBase className={styleClasses.buttonBase}>
-                            <a href="#home" className={styleClasses.link} onClick={props.click} >Home</a>
-                        </ButtonBase>
-                        <ButtonBase className={styleClasses.buttonBase}>
-                            <a href="#about" className={styleClasses.link}>About</a>
-                        </ButtonBase>
-                        <ButtonBase className={styleClasses.buttonBase}>
-                            <a href="#experience" className={styleClasses.link}>Experience</a>
-                        </ButtonBase>
-                        <ButtonBase className={styleClasses.buttonBase}>
-                            <a href="#projects" className={styleClasses.link}>Projects</a>
-                        </ButtonBase>
-                        <ButtonBase className={styleClasses.buttonBase}>
-                            <a href="#skills" className={styleClasses.link}>Skills</a>
-                        </ButtonBase>
+                        {
+                            links.map(link => (
+                                <ButtonBase className={styleClasses.buttonBase} key={link.text}>
+                                    <a href={link.href} className={styleClasses.link + ' ' + link.class}>{link.text}</a>
+                                </ButtonBase>
+                            ))
+                        }
                     </div>
                     <div className={styleClasses.mobileOnly} onClick={props.sidebarOpenHandler}>
                         <svg width="30" height="22" className={styleClasses.menuIcon}>

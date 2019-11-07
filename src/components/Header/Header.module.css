@@ -7,6 +7,10 @@
     text-decoration: none;
 }
 
+.link:hover, .link:focus, .link:active {
+    font-weight: bold;
+}
+
 .buttonBase {
     border-radius: 5px !important;
 }
@@ -19,9 +23,6 @@
     cursor: pointer;
 }
 
-.menuIcon {
-    
-}
 
 @media only screen and (min-width: 700px) {
     .desktopOnly {
