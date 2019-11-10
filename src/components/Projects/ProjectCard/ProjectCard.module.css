@@ -1,11 +1,11 @@
 .Card {
     box-sizing: border-box;
     margin: 15px 0;
-    height: 550px;
+    /* height: 550px; */
 }
 
 .descriptionBody {
-    height: 265px;
+    /* height: 265px; */
     /* background-color: thistle; */
     margin-top: 5px;
     box-sizing: border-box;
@@ -44,8 +44,25 @@
     position: absolute;
     top: 5px;
     right: 10px;
+    background-color: rgba(255, 255, 255, 0.3) !important;
 }
 
+.link {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    padding: 8px 10px 10px 10px;
+    font-size: 1rem;
+    transition: transform 130ms ease-in;
+    /* background-color: tan; */
+    box-sizing: border-box;
+    color: #333333
+}
+
+.link:hover {
+    /* text-decoration: underline; */
+    transform: scale(1.1);
+    color: #000000
+}
 
 @media only screen and (min-width: 768px) {
     .Card {

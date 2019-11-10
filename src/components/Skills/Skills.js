@@ -5,8 +5,9 @@ import styleClasses from './Skills.module.css';
 export default function Skills() {
     const skills = [
         'HTML', 'Javascript', 'React', 'Redux', 'Angular', 'Jest', 'CSS', 'SCSS',
-        'Java', 'Android App Development',
-        'C#', 'Azure SQL', 'Azure Data Factory', 'Azure Devops',
+        'Java', 'C#', 'Android App Development', 'Powershell',
+        'Azure SQL', 'Firebase Firestore', 'Firebase Realtime Databse',
+        'Firebase Cloud Functions', 'Azure Data Factory', 'Azure Devops',
         'GIT', 'Agile Development',
         'Photoshop', 'Figma'
     ]

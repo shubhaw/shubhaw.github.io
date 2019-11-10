@@ -5,7 +5,7 @@ import { Typography } from '@material-ui/core';
 
 export default function Home() {
     return (
-        <div id="home" className={styleClasses.Home + ' home'}>
+        <div id="home" className={styleClasses.Home}>
             <div className={styleClasses.Main}>
                 <div className={styleClasses.MainText}>
                     <Typography variant="h1" className={styleClasses.h1}>

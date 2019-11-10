@@ -1,6 +1,8 @@
 .Home {
     background: url('../../assets/images/bg.jpg');
-    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     box-sizing: border-box;
     min-height: 100vh;
     position: relative;
@@ -34,6 +36,7 @@
 
 .h4 {
     font-size: 1.5rem !important;
+    margin-top: 10px !important;
 }
 
 @media only screen and (min-width: 500px) {
