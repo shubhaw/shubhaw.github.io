@@ -47,7 +47,7 @@ export default function Projects() {
             image: CalculatorImage,
             label: 'Web, React',
             para1: 'This is a simple web app completely built using React and Redux. It currently has two types of calculators: Standard Calculator & Currency Converter',
-            para2: 'A sidebar is there which has the navigation links to both the calculators. The button panel of the calculator has been designed using CSS Grid Layout. The currency converter fetches the current conversion rates from https://api.exchangeratesapi.io/ using axios',
+            para2: 'A sidebar is there which has the navigation links to both the calculators. The button panel of the calculator has been designed using CSS Grid Layout. The currency converter fetches the current conversion rates from https://api.exchangeratesapi.io/ using axios.',
             button1: 'View',
             button2: 'Share',
             link: 'https://github.com/shubhaw/calculator'

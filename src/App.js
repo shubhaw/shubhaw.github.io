@@ -32,7 +32,7 @@ function App() {
         const header = document.querySelector("header");
         const home = document.querySelector("#home");
         const homeNav = document.querySelector(".homeNav");
-        
+
         const homeOptions = {
             rootMargin: "-10% 0px 0px 0px"
         };
@@ -115,7 +115,7 @@ function App() {
 
         projectsObserver.observe(projects);
     })
-    
+
     useEffect(() => {
         const skills = document.querySelector("#skills");
         const skillsNav = document.querySelector(".skillsNav");
@@ -149,7 +149,7 @@ function App() {
 
     return (
         <ThemeProvider theme={theme}>
-            <div>
+            <React.Fragment>
                 <Sidebar show={isSidebarVisible} sidebarCloseHandler={closeSidebar} />
                 <Header sidebarOpenHandler={openSidebar} sidebarCloseHandler={closeSidebar} />
                 <Home />
@@ -158,7 +158,7 @@ function App() {
                 <Projects />
                 <Skills />
                 <Footer />
-            </div>
+            </React.Fragment>
         </ThemeProvider>
     );
 }
