@@ -1,16 +1,9 @@
 import React from 'react';
-import { Card, Typography, CardMedia, CardContent, CardActions, Button, Chip } from '@material-ui/core';
+import { Card, Typography, CardMedia, CardContent, Chip, ButtonBase } from '@material-ui/core';
 import styleClasses from './ProjectCard.module.css';
-
-import SimpleBar from 'simplebar-react';
-import 'simplebar/dist/simplebar.min.css';
-
+import LaunchIcon from '@material-ui/icons/Launch';
 
 export default function ProjectCard(props) {
-    const setOnClick = () => {
-        window.location.href = props.link
-    }
-
 
     return (
         <Card className={styleClasses.Card}>
@@ -29,25 +22,51 @@ export default function ProjectCard(props) {
                 <Typography variant="h6" component="h2" className={styleClasses.projectName}>
                     {props.title}
                 </Typography>
-                <div className={styleClasses.descriptionBody} >
-                    <SimpleBar>
+                <div className={styleClasses.descriptionBody}>
+                    <Typography variant="body1" className={styleClasses.text}>
+                        {props.para1}
+                        {
+                            props.para2 ? null : (
+                                <ButtonBase>
+                                    <a href={props.link} className={styleClasses.link}>
+                                        {/* {props.button1} */}
+                                        <LaunchIcon />
+                                    </a>
+                                </ButtonBase>
+                            )
+                        }
+                    </Typography>
+                    <Typography variant="body1" className={styleClasses.text}>
+                        {props.para2}
+                        {
+                            props.para2 ? (
+                                <ButtonBase>
+                                    <a href={props.link} className={styleClasses.link}>
+                                        {/* {props.button1} */}
+                                        <LaunchIcon />
+                                    </a>
+                                </ButtonBase>
+                            ) : null
+                        }
+                    </Typography>
+                    {/* <SimpleBar>
                         <Typography variant="body1" className={styleClasses.text}>
                             {props.para1}
                         </Typography>
                         <Typography variant="body1" className={styleClasses.text}>
                             {props.para2}
                         </Typography>
-                    </SimpleBar>
+                    </SimpleBar> */}
                 </div>
             </CardContent>
-            <CardActions className={styleClasses.cardActions}>
+            {/* <CardActions className={styleClasses.cardActions}>
                 <Button size="small" color="primary" onClick={setOnClick}>
                     {props.button1}
                 </Button>
-                {/* <Button size="small" color="primary">
+                <Button size="small" color="primary">
                     {props.button2}
-                </Button> */}
-            </CardActions>
+                </Button>
+            </CardActions> */}
         </Card>
     )
 }
