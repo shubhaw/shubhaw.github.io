@@ -8,6 +8,7 @@ import Experience from './components/Experience/Experience';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 import Sidebar from './components/Sidebar/Sidebar';
+import Footer from './components/Footer/Footer';
 
 const theme = createMuiTheme({
     typography: {
@@ -156,6 +157,7 @@ function App() {
                 <Experience />
                 <Projects />
                 <Skills />
+                <Footer />
             </div>
         </ThemeProvider>
     );

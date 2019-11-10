@@ -3,9 +3,9 @@ import { Typography } from '@material-ui/core';
 import styleClasses from './Projects.module.css';
 import PortfolioImage from '../../assets/images/bg.jpg';
 import CalculatorImage from '../../assets/images/Calculator.jpg';
-import StickyRemindersImage from '../../assets/images/StickyReminders.webp';
-import RemindYourFriendImage from '../../assets/images/RemindYourFriend.webp';
-import SimpleNotepadImage from '../../assets/images/SimpleNotepad.webp';
+import StickyRemindersImage from '../../assets/images/StickyReminders.png';
+import RemindYourFriendImage from '../../assets/images/RemindYourFriend.png';
+import SimpleNotepadImage from '../../assets/images/SimpleNotepad.png';
 import StoreLocatorImage from '../../assets/images/StoreLocator.png';
 import ProjectCard from './ProjectCard/ProjectCard';
 
@@ -56,7 +56,7 @@ export default function Projects() {
             title: 'Portfolio',
             image: PortfolioImage,
             label: 'Web, React',
-            para1: 'This portfolio web app itself is built using React and Material UI.',
+            para1: 'This portfolio web app itself is built using React and Material UI. Intersection observer has been used to make the top bar transparent and non-transparent based on the page scrolled. Flex and Grid layouts have also been used to make this website responsive.',
             para2: '',
             button1: 'View',
             button2: 'Share',

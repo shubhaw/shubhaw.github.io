@@ -51,11 +51,11 @@ export default function Header(props) {
             href: '#skills',
             class: 'skillsNav'
         },
-        {
-            text: 'Contact',
-            href: '#skills',
-            class: 'skillsNav'
-        }
+        // {
+        //     text: 'Contact',
+        //     href: '#skills',
+        //     class: 'skillsNav'
+        // }
     ];
 
     return (

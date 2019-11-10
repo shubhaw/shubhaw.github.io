@@ -1,0 +1,59 @@
+.Footer {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 50px 0 auto;
+    padding: 0 5% 20px 5%;
+    min-height: 200px;
+    background-color: #111111;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "contact"
+        "projects"
+        "sitemap";
+    /* grid-template-areas: "sitemap"
+        "projects"
+        "contact"; */
+    grid-gap: 10px;
+}
+
+.sitemap {
+    grid-area: sitemap;
+    padding-top: 20px;
+}
+
+.projects {
+    grid-area: projects;
+    padding-top: 20px;
+}
+
+.contact {
+    grid-area: contact;
+    padding-top: 20px;
+}
+
+.sectionHeader {
+    margin-bottom: 10px !important;
+}
+.link {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: inherit;
+    line-height: 2rem;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .Footer {
+        padding: 0 10% 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "sitemap projects contact";
+    }
+}
