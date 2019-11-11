@@ -68,7 +68,7 @@ export default function Footer() {
                 </Typography>
                 {
                     sitemap.map(site => (
-                        <a href={site.link} key={site.text} className={styleClasses.link}>{site.text}</a>
+                        <a href={site.href} key={site.text} className={styleClasses.link}>{site.text}</a>
                     ))
                 }
             </div>

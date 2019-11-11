@@ -2,6 +2,7 @@
     background: url('../../assets/images/bg.jpg');
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     box-sizing: border-box;
     min-height: 100vh;
