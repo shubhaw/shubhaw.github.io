@@ -7,6 +7,7 @@ import StickyRemindersImage from '../../assets/images/StickyReminders.png';
 import RemindYourFriendImage from '../../assets/images/RemindYourFriend.png';
 import SimpleNotepadImage from '../../assets/images/SimpleNotepad.png';
 import StoreLocatorImage from '../../assets/images/StoreLocator.png';
+import PictionaryImage from '../../assets/images/Pictionary.jpg';
 import ProjectCard from './ProjectCard/ProjectCard';
 
 export default function Projects() {
@@ -41,6 +42,16 @@ export default function Projects() {
             button1: 'View',
             button2: 'Share',
             link: 'https://github.com/shubhaw/store-locator'
+        },
+        {
+            title: 'Pictionary',
+            image: PictionaryImage,
+            label: 'Web, React',
+            para1: 'Pictionary is a fun guessing game in which you need to draw/sketch the word which you are given and the other players need to guess that word. At the end of stipulated time, it shows your score and gives you choice to download the images which you had drawn during the game.',
+            para2: 'It uses Canvas API for drawing and has touch support as well, making it possible to play on mobile devices using fingers or stylus. It is built using React and has Redux for store mamagement.',
+            button1: 'View',
+            button2: 'Share',
+            link: 'https://github.com/shubhaw/pictionary'
         },
         {
             title: 'Calculator',

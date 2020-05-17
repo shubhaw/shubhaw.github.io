@@ -20,6 +20,10 @@ export default function Footer() {
             link: 'https://github.com/shubhaw/store-locator'
         },
         {
+            title: 'Pictionary',
+            link: 'https://github.com/shubhaw/pictionary'
+        },
+        {
             title: 'Calculator',
             link: 'https://github.com/shubhaw/calculator'
         },

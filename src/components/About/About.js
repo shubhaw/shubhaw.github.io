@@ -10,10 +10,10 @@ export default function About() {
             </Typography>
             <Paper className={styleClasses.paper}>
                 <Typography variant="body1" className={styleClasses.p}>
-                    I am a full stack developer, currently working as Associate Consultant at Microsoft, India.
+                    I am a full stack developer, currently working as Software Engineer at Microsoft, India. I have done B.Tech. in Computer Science and currently I mostly work in front-end development. I have also worked extensively on Java and developed some native Android apps too which you can find on play store.
                 </Typography>
                 <Typography variant="body1" className={styleClasses.p}>
-                I have done B.Tech. in Computer Science and currently I mostly work in front-end development. I have worked extensively on Java and also developed some native Android apps which you can find on play store.
+                    I love to code and help people in tech related issues they face. My next target is to attend few conferences on frontend development - mainly on React and Javascript to gain a deeper understanding and help people by sharing my knowledge through blogging.
                 </Typography>
             </Paper>
         </div>

@@ -27,7 +27,8 @@
 
 @media only screen and (min-width: 1024px) {
     .Card {
-        padding: 20px 40px;
+        width: 32%;
+        /* padding: 20px 40px; */
     }
 
     .text {
